@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/relative_layout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_centerHorizontal="true"
+tools:context=".MainActivity">
+
+<LinearLayout
+    android:id="@+id/info"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="200dp"
+    android:layout_centerHorizontal="true"
+    android:textAlignment="center">
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="250dp"
+        android:layout_height="55dp"/>
+</LinearLayout>
+
+<RadioGroup
+    android:id="@+id/radio_bottom"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/info">
+    <RadioButton
+        android:id="@+id/hombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hombre"/>
+    <RadioButton
+        android:id="@+id/mujer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Mujer"/>
+</RadioGroup>
+
+<LinearLayout
+    android:id="@+id/botones"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal"
+    android:layout_below="@+id/radio_bottom">
+    <Button
+        android:id="@+id/imagenes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Imagenes"
+        android:layout_marginLeft="70dp"/>
+    <Button
+        android:id="@+id/frases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frases"
+        android:layout_marginLeft="70dp"/>
+</LinearLayout>
+    <Button
+        android:id="@+id/salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:layout_marginLeft="75dp"
+        android:layout_below="@id/botones"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
